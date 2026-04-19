@@ -1,4 +1,4 @@
-import { UserRole } from 'src/db/prisma/client/enums';
+import { UserRole } from '../../src/db/prisma/client/enums';
 import { authRoutes } from '../endpoints';
 import promoteUserRole from './promoteUserRole';
 
