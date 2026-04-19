@@ -47,7 +47,7 @@ export class AuthController {
 
   @Post('refresh')
   @ApiOperation({ summary: 'Refresh user token' })
-  @HttpCode(201)
+  @HttpCode(200)
   async refresh(
     @Body() body: RefreshBody,
   ): Promise<{ accessToken: string; refreshToken: string }> {
