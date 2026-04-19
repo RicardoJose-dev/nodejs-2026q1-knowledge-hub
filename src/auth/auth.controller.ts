@@ -46,7 +46,7 @@ export class AuthController {
   }
 
   @Post('refresh')
-  @ApiOperation({ summary: 'Log user' })
+  @ApiOperation({ summary: 'Refresh user token' })
   @HttpCode(201)
   async refresh(
     @Body() body: RefreshBody,
